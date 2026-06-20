@@ -69,7 +69,7 @@ generateBtn.addEventListener("click", async() => {
     cleanErrorIfExists();
 
     if(content == ""){
-        showError("sdadas");
+        showError("You should enter a url or link.");
         return
     }
     input.style.borderBottom = "none";
@@ -137,7 +137,7 @@ copyBtn.addEventListener("click", async() =>{
         await navigator.clipboard.write([item]);
 
         // Feedback visual para el usuario
-        alert("¡Código QR copiado al portapapeles!");
+        alert("QR code copied!");
 
     } catch (error) {
         showError("There was a problem.");
