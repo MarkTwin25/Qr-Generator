@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>QR Generator</title>
+</head>
+<body>
+
+    <div class="card">
+        <div class="content">
+            <!-- Card title -->
+            <div class="title">
+                <h1>QR CODE GENERATOR <i class="bi bi-qr-code"></i> </h1>
+                <p>Create your QR code in seconds</p>
+            </div>
+
+            <!-- Inputs -->
+             <div class="inputs">
+                <div class="input">
+                    <input type="text" id="text-input" placeholder="Ingresa tu enlace, URL o texto aqui">
+                </div>
+                <button id="generate-btn">Generate QR</button>
+             </div>
+
+             <!-- Options -->
+              <div class="options">
+                <div class="colors">
+                    <div class="primary-color">
+                        <label for="color">Color:</label>
+                        <input type="color" name="color" id="color" value="#000000">
+                    </div>
+
+                    <div class="secondary-color">
+                        <label for="bg-color">Background Color:</label>
+                        <input type="color" name="bg-color" id="bg-color" value="#ffffff">
+                    </div>
+                </div>
+              </div>
+              
+              <!-- QR image -->
+               <div class="qr-img">
+
+               </div>
+
+            <!-- Buttons -->
+             <div class="buttons">
+
+                <div class="buttons-container">
+                    <button id="download"><i class="bi bi-download"></i> Download</button>
+                    <button id="copy"> <i class="bi bi-copy"></i> Copy image</button>
+                    <button id="clean"> <i class="bi bi-arrow-counterclockwise"></i> Clean</button>
+                </div>
+             </div>
+        </div>
+
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
